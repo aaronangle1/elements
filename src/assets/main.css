@@ -1,0 +1,93 @@
+@import './base.css';
+
+:root {
+  --dark: #162129;
+  --border: #676E74;
+  --light: #F6F7FB;
+  --white: #FFFFFF;
+  --text: #FFFFFF;
+  --text-secondary: #657078;
+  --dark-text-secondary: #b2bdc6
+}
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+  color: var(--text);
+  fill: var(--text);
+  background-color: var(--light);
+}
+
+.dark-text * {
+  color: var(--dark);
+  fill: var(--dark);
+}
+
+.dark-text {
+  color: var(--dark)
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.text-secondary {
+  color: var(--text-secondary)
+}
+
+.dark-text-secondary {
+  color: var(--dark-text-secondary);
+  fill: var(--dark-text-secondary);
+}
+
+/* alignment classes  */
+.f {
+  display: flex;
+}
+
+.f-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.f-align-center {
+  display: flex;
+  align-items: center;
+}
+
+
+.icon-circle {
+  border: solid 2px var(--border);
+  padding: 10px;
+  border-radius: 99999999999999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+
+.icon-circle-hover:hover {
+  transform: scale(1.1);
+  border-color: var(--white);
+}
+
+.icon-circle-hover:hover svg {
+  fill: var(--white);
+}
